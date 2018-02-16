@@ -1,11 +1,19 @@
 privilegeTargets:
   'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
-    'Marvin.Test:TestareaController':
+    'Marvin.Test.TestareaController:AllActions':
       matcher: 'method(public Marvin\Test\Controller\TestareaController->(.*)Action())'
+    'Marvin.Test.TestareaController:PublicActions':
+      matcher: 'method(public Marvin\Test\Controller\TestareaController->(public|otherPublic)Action())'
 
 roles:
   'Neos.Flow:Everybody':
     privileges:
       -
-        privilegeTarget: 'Marvin.Test:TestareaController'
+        privilegeTarget: 'Marvin.Test.TestareaController:PublicActions'
+        permission: GRANT
+
+  'Neos.Neos:Administrator':
+    privileges:
+      -
+        privilegeTarget: 'Marvin.Test.TestareaController:AllActions'
         permission: GRANT

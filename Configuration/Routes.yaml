@@ -1,8 +1,16 @@
 -
-  name: 'testarea'
+  name: 'testarea public'
   uriPattern: 'test'
   defaults:
     '@package': 'Marvin.Test'
     '@controller': 'Testarea'
-    '@action':     'test'
+    '@action':     'public'
+    '@format': 'html'
+-
+  name: 'testarea protected'
+  uriPattern: 'protected'
+  defaults:
+    '@package': 'Marvin.Test'
+    '@controller': 'Testarea'
+    '@action':     'protected'
     '@format': 'html'
