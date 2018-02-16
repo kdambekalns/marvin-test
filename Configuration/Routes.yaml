@@ -1,0 +1,8 @@
+-
+  name: 'testarea'
+  uriPattern: 'test'
+  defaults:
+    '@package': 'Marvin.Test'
+    '@controller': 'testarea'
+    '@action':     'test'
+    '@format': 'html'
