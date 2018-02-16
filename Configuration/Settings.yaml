@@ -4,3 +4,12 @@ Neos:
       routes:
         'Marvin.Test': TRUE
 
+    security:
+      authentication:
+        providers:
+          'Neos.Neos:Backend':
+            requestPatterns:
+              'Marvin.Test:Controllers':
+                pattern: 'ControllerObjectName'
+                patternOptions:
+                  controllerObjectNamePattern: 'Marvin\Test\Controller\.*'
