@@ -3,6 +3,6 @@
   uriPattern: 'test'
   defaults:
     '@package': 'Marvin.Test'
-    '@controller': 'testarea'
+    '@controller': 'Testarea'
     '@action':     'test'
     '@format': 'html'

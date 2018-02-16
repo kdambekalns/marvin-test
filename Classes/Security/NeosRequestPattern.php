@@ -1,8 +1,10 @@
 <?php
 namespace Marvin\Test\Security;
+
 use Neos\Flow\Mvc\ActionRequest;
 use Neos\Flow\Mvc\RequestInterface;
 use Neos\Flow\Security\RequestPatternInterface;
+
 /**
  * A request pattern that can detect and match "frontend" and "backend" mode
  */

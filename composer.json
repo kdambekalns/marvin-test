@@ -1,5 +1,7 @@
 {
+    "name": "marvin/test",
     "description": "",
+    "license": "MIT",
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
@@ -8,7 +10,6 @@
     "suggest": {
         "neos/seo": "*"
     },
-    "name": "marvin/test",
     "autoload": {
         "psr-4": {
             "Marvin\\Test\\": "Classes/"

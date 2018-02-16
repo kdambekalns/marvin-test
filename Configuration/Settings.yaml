@@ -4,28 +4,3 @@ Neos:
       routes:
         'Marvin.Test': TRUE
 
-    # security:
-    #   authentication:
-    #     providers:
-
-
-          # 'Marvin.Test:testareaController':
-          #   provider: PersistedUsernamePasswordProvider
-          #   requestPatterns:
-          #     Marvin.Test:testareaController:
-          #       pattern: Flowpack\Neos\FrontendLogin\Security\NeosRequestPattern
-          #
-          # 'Marvin.Test:testareaController':
-          #   provider: 'PersistedUsernamePasswordProvider'
-          #   entryPoint: 'WebRedirect'
-          #   entryPointOptions:
-          #     routeValues:
-          #       '@package': 'Marvin.Test'
-          #       '@controller': 'testarea'
-          #       '@action': 'test'
-
-          # 'Marvin.Test:testarea':
-          #   provider: PersistedUsernamePasswordProvider
-          #   requestPatterns:
-          #     Marvin.Test:testarea:
-          #       pattern: Flowpack\Neos\FrontendLogin\Security\NeosRequestPattern

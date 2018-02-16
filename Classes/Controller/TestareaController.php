@@ -4,15 +4,17 @@ namespace Marvin\Test\Controller;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Mvc\Controller\ActionController;
 
-class testareaController extends ActionController
+class TestareaController extends ActionController
 {
-
   /**
   * @var \Neos\Flow\Security\Context
   * @Flow\Inject
   */
   protected $securityContext;
 
+    /**
+     * @return string
+     */
   public function testAction() {
     $name = $this->securityContext->getAccount();
     echo \Neos\Flow\var_dump($name);
